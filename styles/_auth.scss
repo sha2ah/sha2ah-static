@@ -1,0 +1,45 @@
+#auth {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .imageContainer {
+  }
+
+  .ant-card {
+    padding: 2rem 1rem;
+    margin: 0 0 3rem;
+    min-width: 400px;
+    margin-top: 100px;
+
+    h1 {
+      text-align: center;
+    }
+
+    .ant-btn {
+      margin-top: 1rem;
+      color: $white;
+      border-color: $main-clr;
+      background-color: $main-clr;
+
+      &:hover {
+        background-color: $l-blue;
+        border-color: $l-blue;
+      }
+    }
+
+    .ant-typography {
+      a {
+        color: $main-clr;
+      }
+    }
+  }
+}

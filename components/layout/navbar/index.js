@@ -1,6 +1,5 @@
-import { MenuOutlined, DownOutlined } from '@ant-design/icons'
-import { Button, Space, Avatar, Dropdown } from 'antd'
 import Link from 'next/link'
+import LanguagesMenu from './LanguagesMenu'
 
 export const Navbar = () => {
   return (
@@ -27,28 +26,13 @@ export const Navbar = () => {
                 Services
               </a>
             </li>
-            {/* <li>
-              <a className="nav-link scrollto" href="#team">
-                Team
-              </a>
-            </li> */}
-            {/* <li>
-              <a className="nav-link scrollto" href="#pricing">
-                Pricing
-              </a>
-            </li> */}
             <li>
               <a className="nav-link scrollto" href="#contact">
                 Contact
               </a>
             </li>
-            {/* <li>
-              <a className="nav-link scrollto" href="#">
-                عربي
-              </a>
-            </li> */}
             <li>
-              <a className="nav-link">عربي</a>
+              <LanguagesMenu />
             </li>
             <li>
               <Link href="/signup">

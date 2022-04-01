@@ -6,23 +6,23 @@ import {
   FieldTimeOutlined,
 } from '@ant-design/icons'
 
+import useTranslation from 'next-translate/useTranslation'
+
 export function Hero() {
+  const { t } = useTranslation('home')
+
   return (
     <section id="hero" className="d-flex align-items-center">
-      <div
-        className="container position-relative"
-        data-aos="fade-up"
-        data-aos-delay="100"
-      >
+      <div className="container position-relative">
         <div className="row justify-content-center">
           <div className="col-xl-7 col-lg-9 text-center">
-            <h1>The leading platform for property management.</h1>
-            <h2>Our platform is built with you in mind.</h2>
+            <h1>{t('hero-title')}</h1>
+            <h2>{t('hero-subtitle')}</h2>
           </div>
         </div>
         <div className="text-center">
           <a href="#about" className="btn-get-started scrollto">
-            Get Started
+            {t('hero-button')}
           </a>
         </div>
 
@@ -63,11 +63,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div
-            className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
+          <div className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div className="icon-box">
               <div className="icon">
                 <FieldTimeOutlined />

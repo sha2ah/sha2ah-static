@@ -11,17 +11,19 @@ import {
   Contact,
 } from '../components/home/'
 
+import useTranslation from 'next-translate/useTranslation'
+
 export default function Home() {
+  const { t, lang } = useTranslation('home')
+
   return (
-    <div>
+    <div
+      dir={lang === 'en' ? 'ltr' : 'rtl'}
+      className={lang === 'en' ? '' : 'text-right'}
+    >
       <Head>
-        <title>
-          EasyRent - Platform to manage your Real Estates without hassle
-        </title>
-        <meta
-          name="description"
-          content="EasyRent A platform to manage your Real Estates without hassle"
-        />
+        <title>{t('title')}</title>
+        <meta name="description" content={t('description')} />
         <link rel="icon" href="/EASY RENT logo.png" />
       </Head>
 
@@ -39,4 +41,12 @@ export default function Home() {
       <Footer />
     </div>
   )
+}
+
+export async function getStaticProps() {
+  console.log('(Re-)Generating...')
+
+  return {
+    revalidate: 600,
+  }
 }

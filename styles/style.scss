@@ -28,6 +28,12 @@ a:hover {
 //   font-family: 'Raleway', 'Cairo', sans-serif;
 // }
 
+.text-right {
+  .ant-form-item-label {
+    text-align: right !important;
+  }
+}
+
 @import 'header';
 @import 'navbar';
 @import 'hero';

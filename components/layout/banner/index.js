@@ -1,17 +1,18 @@
 import React from 'react'
 
+import useTranslation from 'next-translate/useTranslation'
+
 export const Banner = () => {
+  const { t } = useTranslation('common')
+
   return (
     <section id="cta" className="cta">
       <div className="container" data-aos="zoom-in">
         <div className="text-center">
-          <h3>Get started today.</h3>
-          <p>
-            Start managing your properties and collecting rent today for free
-            today.
-          </p>
+          <h3>{t('banner.title')}</h3>
+          <p>{t('banner.subtitle')}</p>
           <a className="cta-btn" href="#">
-            Sign up for free
+            {t('banner.button')}
           </a>
         </div>
       </div>

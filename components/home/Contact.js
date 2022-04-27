@@ -3,12 +3,17 @@ import {
   MailOutlined,
   PhoneOutlined,
 } from '@ant-design/icons'
+
+import useTranslation from 'next-translate/useTranslation'
+
 export const Contact = () => {
+  const { t } = useTranslation('home')
+
   return (
     <section id="contact" className="contact section">
-      <div className="container" data-aos="fade-up">
+      <div className="container">
         <div className="section-title">
-          <h2>Contact Us</h2>
+          <h2>{t('contact.title')}</h2>
         </div>
 
         {/* <div>
@@ -25,19 +30,19 @@ export const Contact = () => {
             <div className="info">
               <div className="address">
                 <EnvironmentOutlined />
-                <h4>Location:</h4>
+                <h4>{t('contact.location')}:</h4>
                 <p>October 6 University, Giza</p>
               </div>
 
               <div className="email">
                 <MailOutlined />
-                <h4>Email:</h4>
+                <h4>{t('contact.email')}:</h4>
                 <p>info@example.com</p>
               </div>
 
               <div className="phone">
                 <PhoneOutlined />
-                <h4>Call:</h4>
+                <h4>{t('contact.phone')}:</h4>
                 <p>(+20) 11 544 786 2</p>
               </div>
             </div>
@@ -52,7 +57,7 @@ export const Contact = () => {
                     name="name"
                     className="form-control"
                     id="name"
-                    placeholder="Your Name"
+                    placeholder={t('contact.form.name')}
                     required
                   />
                 </div>
@@ -62,7 +67,7 @@ export const Contact = () => {
                     className="form-control"
                     name="email"
                     id="email"
-                    placeholder="Your Email"
+                    placeholder={t('contact.form.email')}
                     required
                   />
                 </div>
@@ -73,7 +78,7 @@ export const Contact = () => {
                   className="form-control"
                   name="subject"
                   id="subject"
-                  placeholder="Subject"
+                  placeholder={t('contact.form.subject')}
                   required
                 />
               </div>
@@ -82,7 +87,7 @@ export const Contact = () => {
                   className="form-control"
                   name="message"
                   rows={5}
-                  placeholder="Message"
+                  placeholder={t('contact.form.message')}
                   required
                 ></textarea>
               </div>
@@ -94,7 +99,7 @@ export const Contact = () => {
                 </div>
               </div>
               <div className="text-center">
-                <button type="submit">Send Message</button>
+                <button type="submit">{t('contact.form.button')}</button>
               </div>
             </form>
           </div>

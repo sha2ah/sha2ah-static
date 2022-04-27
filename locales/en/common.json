@@ -1,1 +1,18 @@
-{}
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "signup": "Signup",
+    "logout": "Logout",
+    "login": "Login",
+    "getstarted": "Get Started"
+  },
+  "banner": {
+    "title": "Get started today.",
+    "subtitle": "Start managing your properties and collecting rent today for free today.",
+    "button": "Sign up for free"
+  },
+  "footer": {}
+}

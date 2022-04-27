@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import LanguagesMenu from './LanguagesMenu'
+import useTranslation from 'next-translate/useTranslation'
 
 export const Navbar = () => {
+  const { t } = useTranslation('common')
   return (
     <header id="header" className="fixed-top">
       <div className="container d-flex align-items-center justify-content-between">
@@ -13,22 +15,22 @@ export const Navbar = () => {
           <ul>
             <li>
               <a className="nav-link scrollto" href="#hero">
-                Home
+                {t('navbar.home')}
               </a>
             </li>
             <li>
               <a className="nav-link scrollto" href="#about">
-                About
+                {t('navbar.about')}
               </a>
             </li>
             <li>
               <a className="nav-link scrollto" href="#services">
-                Services
+                {t('navbar.services')}
               </a>
             </li>
             <li>
               <a className="nav-link scrollto" href="#contact">
-                Contact
+                {t('navbar.contact')}
               </a>
             </li>
             <li>
@@ -36,12 +38,14 @@ export const Navbar = () => {
             </li>
             <li>
               <Link href="/signup">
-                <a className="getstarted">Get Started</a>
+                <a className="getstarted">{t('navbar.getstarted')}</a>
               </Link>
             </li>
           </ul>
           <Link href="/signup">
-            <a className="getstarted mobile-nav-toggle">Get Started</a>
+            <a className="getstarted mobile-nav-toggle">
+              {t('navbar.getstarted')}
+            </a>
           </Link>
         </nav>
       </div>

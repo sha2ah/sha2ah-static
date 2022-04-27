@@ -1,51 +1,45 @@
 import { CheckOutlined } from '@ant-design/icons'
 
+import useTranslation from 'next-translate/useTranslation'
+
 export function About() {
+  const { t } = useTranslation('home')
+
   return (
     <section id="about" className="about section">
       <div className="container" data-aos="fade-up">
         <div className="section-title">
-          <h2>Why Us</h2>
+          <h2>{t('about.title')}</h2>
         </div>
 
         <div className="row content">
           <div className="col-lg-6">
-            <p>
-              You deserve simple property management. Your tenants deserve
-              simple rent payments. EasyRent gives you the tools and insights to
-              satisfy your tenants and increase your revenue.
-            </p>
-            <b>Landloard</b>
+            <p>{t('about.description1')}</p>
+            <b>{t('about.landloard.title')}</b>
             <ul>
               <li>
-                <CheckOutlined /> Add your properties and tenants with ease
-                consequat.
+                <CheckOutlined /> {t('about.landloard.feature1')}
               </li>
               <li>
-                <CheckOutlined /> Customize and auto send invoices.
+                <CheckOutlined /> {t('about.landloard.feature2')}
               </li>
               <li>
-                <CheckOutlined /> Access all your tenants and leases in one
-                place.
+                <CheckOutlined /> {t('about.landloard.feature3')}
               </li>
             </ul>
           </div>
           <div className="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              With EasyRent you have the freedom to collect payments online and
-              offline. Tenants have the freedom to pay their rent and other
-              bills through any of our accepted payment methods.
-            </p>
-            <b>Tenant</b>
+            <p>{t('about.description2')}</p>
+            <b>{t('about.tenant.title')}</b>
             <ul>
               <li>
-                <CheckOutlined /> Receive SMS and email alerts for due payments.
+                <CheckOutlined /> {t('about.tenant.feature1')}
               </li>
               <li>
-                <CheckOutlined /> Choose how, when, and from where to pay.
+                <CheckOutlined /> {t('about.tenant.feature2')}
               </li>
               <li>
-                <CheckOutlined /> Send requests to your landlord directly.
+                <CheckOutlined /> {t('about.tenant.feature3')}
               </li>
             </ul>
           </div>

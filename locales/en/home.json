@@ -1,5 +1,105 @@
 {
-  "hero-title": "The leading platform for property management.",
-  "hero-subtitle": "Our platform is built with you in mind.",
-  "hero-button": "Get Started"
+  "title": "EasyRent - Platform to manage your Real Estates without hassle",
+  "description": "Platform to manage your Real Estates without hassle",
+  "hero": {
+    "title": "The leading platform for property management.",
+    "subtitle": "Our platform is built with you in mind.",
+    "button": "Get Started",
+    "feature1": {
+      "title": "FAST AND SECURE COLLECTION",
+      "description": "Setup auto-reminders and collect rent online."
+    },
+    "feature2": {
+      "title": "EFFICIENT PROPERTY MANAGEMENT",
+      "description": "Efficient management of all your properties."
+    },
+    "feature3": {
+      "title": "SMARTER INSIGHTS AND REPORTS",
+      "description": "Get reports about your tenants and properties."
+    },
+    "feature4": {
+      "title": "ANYTIME, ANYWHERE",
+      "description": "You will be able to pay your rent whenever and wherever you choose."
+    }
+  },
+  "about": {
+    "title": "Why Us",
+    "description1": "You deserve simple property management. Your tenants deserve simple rent payments. EasyRent gives you the tools and insights to satisfy your tenants and increase your revenue.",
+    "description2": "With EasyRent you have the freedom to collect payments online and offline. Tenants have the freedom to pay their rent and other bills through any of our accepted payment methods.",
+    "landloard": {
+      "title": "Landloard",
+      "feature1": "Add your properties and tenants with ease consequat.",
+      "feature2": "Customize and auto send invoices.",
+      "feature3": "Access all your tenants and leases in one place."
+    },
+    "tenant": {
+      "title": "Tenant",
+      "feature1": "Receive SMS and email alerts for due payments.",
+      "feature2": "Choose how, when, and from where to pay.",
+      "feature3": "Send requests to your landlord directly."
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "service1": {
+      "title": "Billing and Invoicing",
+      "description": "Send bills to tenants relating to rent, electricity & water, deposits, utilities, insurance, and much more."
+    },
+    "service2": {
+      "title": "Collecting & Monitoring Payments",
+      "description": "Monitor your recurring payments and set a date of choice for tenants to be notified via SMS and/or email."
+    },
+    "service3": {
+      "title": "Reduces Administrative Work",
+      "description": "Eliminate the need for copious paperwork and filings- All receipts and reports relating to tenants, leases and properties are easily accessed and stored in one place."
+    },
+    "service4": {
+      "title": "Automated Rent Notifications",
+      "description": "Tenants automatically receive SMS and email notifications when their rent is due and when it is settled, saving you the hassle of collecting rent manually."
+    },
+    "service5": {
+      "title": "Hassle-Free",
+      "description": "Pay your rent securely online using a link sent to you by Easy Rent Online via email and SMS, on your preferred date of rent settlement."
+    },
+    "service6": {
+      "title": "Multiple Payment Options",
+      "description": "Pay using your preferred payment method such as Fawry or Debit/Credit Card."
+    }
+  },
+  "faqs": {
+    "title": "FREQUENTLY ASKED QUESTIONS",
+    "q1": {
+      "title": "What is EasyRent?",
+      "description": "EasyRent is a cloud service designed for the real estate market, offering quick online rent payment and a property management platform."
+    },
+    "q2": {
+      "title": "How does EasyRent assure a secure and faster collection?",
+      "description": "EasyRent allows property managers to accept online payments from their tenants. It makes rent collection easier, faster and more secure by avoiding the fraud and cash risks and allows property managers to keep track of tenant records and payments."
+    },
+    "q3": {
+      "title": "How does EasyRent assure ease of property management?",
+      "description": "EasyRent increases on time rent payment with reduced admin work, by providing seamless collection channels with real time tracking of rent status as well as instant reports of properties status. EasyRent allows for direct communication between landlord and tenant through EasyRent Message Center."
+    },
+    "q4": {
+      "title": "What are the benefits for the tenants to use EasyRent to pay their rent?",
+      "description": "The tenants will be able to pay anywhere & anytime by receiving auto-reminders when the rent is due."
+    },
+    "q5": {
+      "title": "How can I encourage my landlord to accept my rent through EasyRent?",
+      "description": "To encourage your landlord to provide EasyRent's service for you kindly inform your landlord of your interest to pay online using EasyRent. Provide your landlord's name and contact information to EasyRent team to enable the service."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "location": "Location",
+    "email": "Email",
+    "phone": "Call",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Message",
+      "button": "Send Message"
+    }
+  }
 }

@@ -16,13 +16,13 @@ export function Hero() {
       <div className="container position-relative">
         <div className="row justify-content-center">
           <div className="col-xl-7 col-lg-9 text-center">
-            <h1>{t('hero-title')}</h1>
-            <h2>{t('hero-subtitle')}</h2>
+            <h1>{t('hero.title')}</h1>
+            <h2>{t('hero.subtitle')}</h2>
           </div>
         </div>
         <div className="text-center">
           <a href="#about" className="btn-get-started scrollto">
-            {t('hero-button')}
+            {t('hero.button')}
           </a>
         </div>
 
@@ -32,10 +32,8 @@ export function Hero() {
               <div className="icon">
                 <LockOutlined />
               </div>
-              <h4 className="title">FAST AND SECURE COLLECTION</h4>
-              <p className="description">
-                Setup auto-reminders and collect rent online.
-              </p>
+              <h4 className="title">{t('hero.feature1.title')}</h4>
+              <p className="description">{t('hero.feature1.description')}</p>
             </div>
           </div>
 
@@ -44,10 +42,8 @@ export function Hero() {
               <div className="icon">
                 <DashboardOutlined />
               </div>
-              <h4 className="title">EFFICIENT PROPERTY MANAGEMENT</h4>
-              <p className="description">
-                Efficient management of all your properties.
-              </p>
+              <h4 className="title">{t('hero.feature2.title')}</h4>
+              <p className="description">{t('hero.feature2.description')}</p>
             </div>
           </div>
 
@@ -56,10 +52,8 @@ export function Hero() {
               <div className="icon">
                 <RiseOutlined />
               </div>
-              <h4 className="title">SMARTER INSIGHTS AND REPORTS</h4>
-              <p className="description">
-                Get reports about your tenants and properties.
-              </p>
+              <h4 className="title">{t('hero.feature3.title')}</h4>
+              <p className="description">{t('hero.feature3.description')}</p>
             </div>
           </div>
 
@@ -68,11 +62,8 @@ export function Hero() {
               <div className="icon">
                 <FieldTimeOutlined />
               </div>
-              <h4 className="title">Anytime, Anywhere</h4>
-              <p className="description">
-                You will be able to pay your rent whenever and wherever you
-                choose.
-              </p>
+              <h4 className="title">{t('hero.feature4.title')}</h4>
+              <p className="description">{t('hero.feature4.description')}</p>
             </div>
           </div>
         </div>

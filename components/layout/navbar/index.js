@@ -38,15 +38,16 @@ export const Navbar = () => {
             </li>
             <li>
               <Link href="/signup">
-                <a className="getstarted">{t('navbar.getstarted')}</a>
+                <a className="getstarted">{t('navbar.signup')}</a>
               </Link>
             </li>
           </ul>
-          <Link href="/signup">
-            <a className="getstarted mobile-nav-toggle">
-              {t('navbar.getstarted')}
-            </a>
-          </Link>
+          <div className="mobile-nav-toggle">
+            <LanguagesMenu />
+            <Link href="/signup">
+              <a className="getstarted">{t('navbar.signup')}</a>
+            </Link>
+          </div>
         </nav>
       </div>
     </header>

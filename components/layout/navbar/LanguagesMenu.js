@@ -44,12 +44,11 @@ const LanguagesMenu = () => {
     >
       <Space>
         <a className="nav-link" onClick={(e) => e.preventDefault()}>
-          <Avatar
-            size={16}
-            src={`/images/flags/${lang}.svg`}
-            style={{ marginRight: '8px' }}
-          />
-          {lang === 'en' ? 'English' : 'عربي'} <DownOutlined />
+          <Avatar size={16} src={`/images/flags/${lang}.svg`} />
+          <span className="text">
+            {lang === 'en' ? 'English' : 'عربي'}
+          </span>{' '}
+          <DownOutlined />
         </a>
       </Space>
     </Dropdown>

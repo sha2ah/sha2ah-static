@@ -13,7 +13,7 @@ export const Navbar = () => {
 
         <nav id="navbar" className="navbar">
           <ul>
-            <li>
+            {/* <li>
               <a className="nav-link scrollto" href="#hero">
                 {t('navbar.home')}
               </a>
@@ -32,7 +32,7 @@ export const Navbar = () => {
               <a className="nav-link scrollto" href="#contact">
                 {t('navbar.contact')}
               </a>
-            </li>
+            </li> */}
             <li>
               <LanguagesMenu />
             </li>

@@ -30,7 +30,7 @@ const Signup = () => {
     try {
       const data = await authServices.signup(values)
       console.log(data)
-      router.push('https://www.sha2ah.com/estates')
+      router.push('https://www.sha2ah.com/renters')
     } catch (err) {
       console.log(err.message)
     }

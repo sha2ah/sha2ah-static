@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Navbar, Footer, Banner } from '../components/layout/'
 import {
   Hero,
@@ -32,7 +31,7 @@ export default function Home() {
       <main id="main">
         <About />
         <Services />
-        <Banner />
+        <Banner link="/signup" />
         {/* <Team /> */}
         <FAQ />
         {/* <Pricing /> */}

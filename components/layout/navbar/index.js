@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import LanguagesMenu from './LanguagesMenu'
 import useTranslation from 'next-translate/useTranslation'
 
@@ -7,9 +8,16 @@ export const Navbar = () => {
   return (
     <header id="header" className="fixed-top">
       <div className="container d-flex align-items-center justify-content-between">
-        <h1 className="logo">
-          <Link href="/">EasyRent</Link>
-        </h1>
+        <div className="logo">
+          <Link href="/">
+            <Image
+              src="/EASY RENT logo.png"
+              alt="EasyRent"
+              width="80"
+              height="60"
+            />
+          </Link>
+        </div>
 
         <nav id="navbar" className="navbar">
           <ul>

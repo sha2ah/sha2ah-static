@@ -119,8 +119,8 @@ const Signup = () => {
                     {t('signup.button')}
                   </Button>
                 </Form>
-                <div style={{ marginTop: 8 }}>
-                  <Text style={{ fontSize: 12 }}>
+                <div style={{ marginTop: 12 }}>
+                  <Text style={{ fontSize: 14 }}>
                     {t('fields.noAccount')}{' '}
                     <Link
                       href="https://www.dashboard.sha2ah.com/login"

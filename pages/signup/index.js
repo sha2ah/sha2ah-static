@@ -30,7 +30,7 @@ const Signup = () => {
     try {
       const data = await authServices.signup(values)
       console.log(data)
-      router.push('https://www.sha2ah.com/renters')
+      router.push('https://www.dashboard.sha2ah.com/renters')
     } catch (err) {
       console.log(err.message)
     }
@@ -54,7 +54,7 @@ const Signup = () => {
       <Head>
         <title>{t('signup.title')}</title>
         <meta name="description" content={t('signup.description')} />
-        <link rel="icon" href="/EASY RENT logo.png" />
+        <link rel="icon" href="/images/logo.png" />
       </Head>
       <Navbar />
 
@@ -123,7 +123,7 @@ const Signup = () => {
                   <Text style={{ fontSize: 12 }}>
                     {t('fields.noAccount')}{' '}
                     <Link
-                      href="https://www.sha2ah.com/login"
+                      href="https://www.dashboard.sha2ah.com/login"
                       style={{ fontWeight: 'bold' }}
                     >
                       {t('login.button')}

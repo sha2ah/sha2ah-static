@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Router, { useRouter } from 'next/router'
@@ -24,6 +24,7 @@ const { Text, Title } = Typography
 
 const Signup = () => {
   const { t, lang } = useTranslation('auth')
+  const [error, setError] = useState('')
   const router = useRouter()
 
   const onFinish = async (values) => {
@@ -32,6 +33,7 @@ const Signup = () => {
       console.log(data)
       router.push('https://www.dashboard.sha2ah.com/renters')
     } catch (err) {
+      setError('Invalid Values')
       console.log(err.message)
     }
   }
@@ -119,6 +121,9 @@ const Signup = () => {
                     {t('signup.button')}
                   </Button>
                 </Form>
+                <div>
+                  <Text style={{ fontSize: 14, color: 'red' }}>{error}</Text>
+                </div>
                 <div style={{ marginTop: 12 }}>
                   <Text style={{ fontSize: 14 }}>
                     {t('fields.noAccount')}{' '}

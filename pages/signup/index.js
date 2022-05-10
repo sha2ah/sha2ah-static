@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Router, { useRouter } from 'next/router'
+import axios from 'axios'
 
 import { Navbar, Footer } from '../../components/layout'
 import {
@@ -29,8 +30,16 @@ const Signup = () => {
 
   const onFinish = async (values) => {
     try {
-      const data = await authServices.signup(values)
-      console.log(data)
+      const response = await authServices.signup(values)
+      console.log(response)
+      setError('')
+
+      sessionStorage.setItem('token', response.data.access)
+      document.cookie = `token=${response.data.access}; domain=sha2ah.com`
+      axios.defaults.headers.common = {
+        Authorization: `Bearer ${sessionStorage.getItem('token')}`,
+      }
+
       router.push('https://www.dashboard.sha2ah.com/renters')
     } catch (err) {
       setError('Invalid Values')

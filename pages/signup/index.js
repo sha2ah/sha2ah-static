@@ -126,7 +126,7 @@ const Signup = () => {
                 </div>
                 <div style={{ marginTop: 12 }}>
                   <Text style={{ fontSize: 14 }}>
-                    {t('fields.noAccount')}{' '}
+                    {t('fields.haveAccount')}{' '}
                     <Link
                       href="https://www.dashboard.sha2ah.com/login"
                       style={{ fontWeight: 'bold' }}

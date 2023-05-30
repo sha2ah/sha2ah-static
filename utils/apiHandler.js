@@ -9,7 +9,7 @@ if (typeof window !== 'undefined') {
 
 export const api = (table) => {
   return axios.create({
-    baseURL: `https://guarded-scrubland-74784.herokuapp.com/${table}`,
+    baseURL: `http://127.0.0.1:8000/${table}`,
     withCredentials: false,
     headers: {
       Accept: 'application/json',
